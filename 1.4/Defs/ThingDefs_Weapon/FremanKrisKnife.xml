@@ -1,0 +1,102 @@
+<Defs>
+
+  <ThingDef Name="BaseMeleeWeaponDune" Abstract="True" ParentName="BaseWeapon">
+    <techLevel>Neolithic</techLevel>
+    <smeltable>true</smeltable>
+    <burnableByRecipe>true</burnableByRecipe>
+    <thingCategories>
+      <li>WeaponsMelee</li>
+    </thingCategories>
+    <weaponClasses>
+      <li>Melee</li>
+    </weaponClasses>
+    <relicChance>1</relicChance>
+    <inspectorTabs>
+      <li>ITab_Art</li>
+    </inspectorTabs>
+  </ThingDef>
+
+  <ThingDef Name="BaseMeleeWeapon_SharpDune" ParentName="BaseMeleeWeaponDune" Abstract="True">
+    <weaponClasses>
+      <li>MeleePiercer</li>
+    </weaponClasses>
+  </ThingDef>
+
+  <ThingDef Name="BaseMeleeWeapon_SharpDune_Quality" Abstract="True" ParentName="BaseMeleeWeapon_SharpDune">
+    <comps>
+      <li>
+        <compClass>CompQuality</compClass>
+      </li>
+      <li Class="CompProperties_Art">
+        <nameMaker>NamerArtWeaponMelee</nameMaker>
+        <descriptionMaker>ArtDescription_WeaponMelee</descriptionMaker>
+        <minQualityForArtistic>Excellent</minQualityForArtistic>
+      </li>
+    </comps>
+  </ThingDef>
+
+  <ThingDef ParentName="BaseMeleeWeapon_SharpDune_Quality">
+    <defName>pphhyy_Dune_FremenKrisKnife</defName>
+    <label>Fremen Crysknife Knife</label>
+    <techLevel>Neolithic</techLevel>
+    <description>Your pawns can unleash their inner Fremen by wielding a Crysknife.You only need the tooth of a wo..Oh right we don't have those. Worry not, if you manage to kill a thumbro and take home it's horn, you are all set to craft the blade. It's damage designed with the mobility of the armor in mind you are better off rushing down enemies instead of holding a killbox or any of your favorite corridors. 
+
+(The Crysknife shares the same stats with the Persona Monosword but without it's own persona module)</description>
+    <graphicData>
+      <texPath>Weapon/FremenKrisKnife/FremenKrisKnife</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <uiIconScale>1.6</uiIconScale>
+    <weaponTags>
+      <li>MedievalMeleeBasic</li>
+      <li>NeolithicMeleeBasic</li>
+    </weaponTags>
+    <weaponClasses>
+      <li>Neolithic</li>
+    </weaponClasses>
+    <costList>
+      <WoodLog>5</WoodLog>
+      <ThrumboHorn>1</ThrumboHorn>
+    </costList>
+    <statBases>
+      <WorkToMake>10000</WorkToMake>
+      <Mass>0.5</Mass>
+    </statBases>
+    <equippedAngleOffset>-65</equippedAngleOffset>
+    <burnableByRecipe>false</burnableByRecipe>
+    <tools>
+      <li>
+        <label>handle</label>
+        <capacities>
+          <li>Blunt</li>
+        </capacities>
+        <power>9</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+      <li>
+        <label>blade</label>
+        <capacities>
+          <li>Cut</li>
+        </capacities>
+        <power>23</power>
+        <cooldownTime>1.5</cooldownTime>
+      </li>
+      <li>
+        <label>point</label>
+        <capacities>
+          <li>Stab</li>
+        </capacities>
+        <power>27</power>
+        <cooldownTime>2</cooldownTime>
+      </li>
+    </tools>
+    <recipeMaker>
+      <recipeUsers>
+        <li>CraftingSpot</li>
+        <li>ElectricSmithy</li>
+        <li>FueledSmithy</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>

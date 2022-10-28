@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+
+  <ThingDef ParentName="ArmorMachineableBase">
+    <defName>pphhyy_Dune_JihadArmor</defName>
+    <label>Fremen Fedaykin Armor</label>
+    <description>Don the armor of the legendary Feydakin and show the whole Rim that complaining about hot weather is overrated. 
+Your high-efficiency filter and heat-exchange system will make sure that even the biggest heat waves won't bother you in the extreme desert conditions so you can starve to death in peace. 
+
+(The armor has identical stats to the Recon armor with more advanced heat insulation)</description>
+    <graphicData>
+      <texPath>Armor/JihadArmor/DuneJihad</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <shaderType>CutoutComplex</shaderType>
+    </graphicData>
+    <techLevel>Spacer</techLevel>
+    <generateCommonality>2</generateCommonality>
+    <tradeTags>
+      <li>HiTechArmor</li>
+    </tradeTags>
+    <costList>
+      <ComponentSpacer>3</ComponentSpacer>
+      <Plasteel>80</Plasteel>
+      <Uranium>10</Uranium>
+    </costList>
+    <tradeability>Sellable</tradeability>
+    <statBases>
+      <WorkToMake>45000</WorkToMake>
+      <MaxHitPoints>280</MaxHitPoints>
+      <Mass>5</Mass>
+      <Flammability>0.4</Flammability>
+      <ArmorRating_Sharp>0.92</ArmorRating_Sharp>
+      <ArmorRating_Blunt>0.4</ArmorRating_Blunt>
+      <ArmorRating_Heat>0.46</ArmorRating_Heat>
+      <Insulation_Cold>0</Insulation_Cold>
+      <Insulation_Heat>50</Insulation_Heat>
+      <EquipDelay>11</EquipDelay>
+    </statBases>
+    <thingCategories>
+      <li>ApparelArmor</li>
+    </thingCategories>
+    <apparel>
+      <bodyPartGroups>
+        <li>Torso</li>
+        <li>Neck</li>
+        <li>Shoulders</li>
+        <li>Arms</li>
+        <li>Legs</li>
+      </bodyPartGroups>
+      <wornGraphicPath>Armor/JihadArmor/DuneJihad</wornGraphicPath>
+      <layers>
+        <li>Middle</li>
+        <li>Shell</li>
+      </layers>
+      <defaultOutfitTags>
+        <li>Soldier</li>
+      </defaultOutfitTags>
+      <useDeflectMetalEffect>true</useDeflectMetalEffect>
+    </apparel>
+    <recipeMaker>
+      <unfinishedThingDef>UnfinishedTechArmor</unfinishedThingDef>
+      <researchPrerequisite>ReconArmor</researchPrerequisite>
+      <skillRequirements>
+        <Crafting>6</Crafting>
+      </skillRequirements>
+      <recipeUsers Inherit="False">
+        <li>FabricationBench</li>
+      </recipeUsers>
+    </recipeMaker>
+  </ThingDef>
+
+</Defs>
+
+  

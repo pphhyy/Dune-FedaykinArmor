@@ -4,8 +4,11 @@
 
   <ThingDef ParentName="ArmorMachineableBase">
     <defName>pphhyy_Dune_JihadArmor</defName>
-    <label>Fremen Jihad Armor</label>
-    <description>Fremen Jihad Armor.</description>
+    <label>Fremen Fedaykin Armor</label>
+    <description>Don the armor of the legendary Feydakin and show the whole Rim that complaining about hot weather is overrated. 
+Your high-efficiency filter and heat-exchange system will make sure that even the biggest heat waves won't bother you in the extreme desert conditions so you can starve to death in peace. 
+
+(The armor has identical stats to the Recon armor with more advanced heat insulation)</description>
     <graphicData>
       <texPath>Armor/JihadArmor/DuneJihad</texPath>
       <graphicClass>Graphic_Single</graphicClass>
